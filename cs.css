@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Montserrat:wght@100&family=Orbitron&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,'sans-serif';
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: #1a313a;
+}
+
+.side-bar{
+    position: absolute;
+    height: 100vh;
+    background-color: #ffff;
+    overflow: hidden ;
+    width: 60px;
+    transition: 0.5s;
+}
+.side-bar:hover{
+    width: 300px;
+}
+
+.side-bar ul {
+    position: relative;
+    height: 100vh;
+}
+
+.side-bar ul,li {
+    list-style: none;
+}
+
+.side-bar ul li :hover{
+    background-color: #f3f3f3;
+}
+
+
+
+.side-bar ul li a {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.side-bar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color:#333
+
+}
+
+
+.side-bar ul li a .text{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;   
+}
+
+.side-bar ul li.logo{
+    margin-bottom: 50px;
+}
+
+.side-bar ul li.logo:hover{
+    background: #fff;
+}
+
+.side-bar ul li.logo .icon {
+    font-size: 2em;
+}
+
+.side-bar ul li.logo .text{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.bottom
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
